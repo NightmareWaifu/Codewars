@@ -57,24 +57,38 @@ char *double_to_IEEE_754(double number)
 */
 
 //6kyu - Weird String Case
-char *to_weird_case (char *string)
-{
-    // mutate string and return it
-    char character[2];
-    character[1] = '\0';
-    int index = 0;
-    for (size_t i = 0; i < strlen(string); i++)
-    {
-        character[0] = string[i];
-        if (character[0] == ' ')
-        {
-            index = 0;
-        } else
-        {
-            string[i] = index % 2 == 0 ? string[i] = toupper(character[0]) : tolower(character[0]);
-            index++;
-        }
+// char *to_weird_case (char *string)
+// {
+//     // mutate string and return it
+//     char character[2];
+//     character[1] = '\0';
+//     int index = 0;
+//     for (size_t i = 0; i < strlen(string); i++)
+//     {
+//         character[0] = string[i];
+//         if (character[0] == ' ')
+//         {
+//             index = 0;
+//         } else
+//         {
+//             string[i] = index % 2 == 0 ? string[i] = toupper(character[0]) : tolower(character[0]);
+//             index++;
+//         }
 
-    }
-	return string;
+//     }
+// 	return string;
+// }
+
+//6kyu - Who Likes It?
+char *likes(size_t n, const char *const names[n]) {
+    //  <----  hajime!
+    /*
+    base cases
+    0 - no one
+    1 - 1 name
+    2 - 2 names
+    3 - 3 names
+    4 - 2 names + n, n=4-2
+    */
+	return calloc(1, 1);
 }
